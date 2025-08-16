@@ -1,0 +1,27 @@
+{
+    "id": "2DC93A5F",
+    "path": "~/GitHub/Intro_to_R_with_Joy/Introduction to R.Rmd",
+    "project_path": "Introduction to R.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1755317592199.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "457,0",
+        "scrollLine": "449",
+        "working_dir": "project"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1755324718,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1755325047247,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,3 @@
+"0","d4 <- tableby(residence ~ smoker, data = d1)"
+"0",""
+"0","summary(d4)"

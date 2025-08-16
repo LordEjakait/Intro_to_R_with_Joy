@@ -448,3 +448,11 @@ d3 <- d1 |>
 head(d3)
 ```
 
+## Merge data, d2 and d3
+- we use the function merge ()
+- To join the two data sets, we need to have a common column name
+
+```{r}
+d4 <-  merge(d2, d3, by = "county", by.y = "county", all.x = TRUE)
+```
+
