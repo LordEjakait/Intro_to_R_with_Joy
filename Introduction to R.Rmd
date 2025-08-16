@@ -1,0 +1,71 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+author: "ejakait" date: "8-9-2025" output: word_document: number_sections: true editor_options: markdown: wrap: 72
+
+#bibliography: Senegal_SCH.bib #link-citations: true
+
+
+Signs (Comparison Operators)
+These are like questions you ask your data and R answers TRUE or FALSE
+Sign	Meaning	Example	Result
+==	Equals to	5 == 5	TRUE
+!=	Not equal to	5 != 3	TRUE
+>	Greater than	7 > 2	TRUE
+<	Less than	4 < 6	TRUE
+>=	Greater than or equal to	5 >= 5	TRUE
+<=	Less than or equal to	3 <= 3	TRUE
+
+#create a vector of ages of students
+
+```{r}
+age <- c(15, 20, 25)
+```
+
+Who is older than 18?
+ 
+```{r}
+age > 18
+```
+```{r}
+# Who is younger than 30?
+age < 30 
+```
+
+Operators
+These are used to combine questions, like asking more than one question at once
+Sign	Meaning	Example	Result
+&	AND - Both conditions must be TRUE	(5 > 3) & (2 < 4)	TRUE
+|	OR - At least one condition must be TRUE	
+(5>10)|(2<4)
+
+
+3. if
+
+```{r}
+a <- 30
+b <- 20
+
+if (b > a) {
+  print("b is greater than a")
+}
+```
+
+
+
+4. else if - you are telling R that if the previous conditions 
+were not true, then try this other condition
+
+```{r}
+a <- 30
+b <- 30
+
+if (b > a){
+  print("b is greater than a")
+} else if (a == b){
+  print("b is equal to a")
+}
+```
+

@@ -1,0 +1,105 @@
+---
+title: "Pre-class exercise"
+author: "Ejakait Vincent"
+date: "2025-08-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+1.	What is the result of running this code in R?
+x <- "hello"
+y <- 1
+z <- c(x, y)
+
+```{r Q.1}
+x <- "hello"
+y <- 1
+z <- c(x, y)
+```
+
+Creates objects x = "hello", y = 1, z = combination of "hello" and "1"
+
+
+•	What is the data type of x and y
+```{r}
+typeof(x)
+typeof(y)
+```
+2.	Try this in R and say the output
+typeof(TRUE)
+typeof(3.14)
+typeof("R is fun")
+typeof(c(1, 2, 3))
+
+```{r}
+typeof(TRUE)
+typeof(3.14)
+typeof("R is fun")
+typeof(c(1, 2, 3))
+```
+
+•	Can a vector contain both numbers and characters?
+Answer: No, it has to be items of the same type
+
+
+3.	What does the mean() function do? Try this
+mean(c(5, 10, 15))
+
+```{r mean}
+mean(c(5, 10, 15))
+```
+This adds the values inside the concatination and then does the mean (30/3) = 10
+
+•	What happens if you run the following instead?
+mean(5, 10, 15)
+
+```{r}
+mean(5, 10, 15)
+```
+This just takes the mean of the firs number "5" (5/1) = 5
+
+
+4.	R comes with datasets you can explore. Try running this and explain what kind of data you see:
+data()
+head(mtcars)
+
+```{r}
+data()
+head(mtcars)
+```
+
+5.	Find out what function is used to import a .csv file and an .xlsx file into R.
+ANS:  read_csv() is used to import .csv file
+      read_xlsx() is used to import .xlsx
+      
+      
+
+6.	Find out the difference between c(), list(), and data.frame()
+c() can carry data of different types 
+list() houses only data of the same type
+data.frame() occurs as a two dimensional table
+
+
+creating factors
+```{r}
+df_1 <- factor(c("male", "female"))
+df_2 <-  c("male", "female")
+typeof(df_2)
+df_3 <- as.factor(df_2)
+typeof(df_3)
+class(df_3)
+```
+
+create levels for factor data
+
+```{r}
+levels(df_3)
+edu_level <- factor(c(1, 2, 3), levels = c("primary", "secondary", "tertiary"))
+class(edu_level)
+levels(edu_level)
+```
+
+
